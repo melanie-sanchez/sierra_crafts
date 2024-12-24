@@ -21,7 +21,6 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
-  onAuthStateChanged,
   sendPasswordResetEmail,
 } from 'firebase/auth';
 

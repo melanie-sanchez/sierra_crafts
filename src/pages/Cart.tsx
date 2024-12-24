@@ -97,7 +97,7 @@ const WishlistButton = styled.button`
 `;
 
 export const Cart: React.FC = () => {
-  const { cartItems, removeFromCart, updateQuantity, isInCart } = useCart();
+  const { cartItems, removeFromCart, updateQuantity } = useCart();
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
   const navigate = useNavigate();
 

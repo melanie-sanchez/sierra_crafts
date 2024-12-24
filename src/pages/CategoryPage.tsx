@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
-import {
-  collection,
-  query,
-  where,
-  getDocs,
-  onSnapshot,
-  doc,
-} from 'firebase/firestore';
+import { collection, query, where, onSnapshot } from 'firebase/firestore';
 import { db } from '../utils/firebase.ts';
 import { Product } from '../types';
 import { useCart } from '../contexts/CartContext.tsx';
@@ -58,22 +51,6 @@ const ProductImage = styled.img`
 
 const ProductInfo = styled.div`
   padding: 1rem;
-`;
-
-const ProductName = styled.h3`
-  margin: 0 0 0.5rem 0;
-  color: #333;
-`;
-
-const ProductPrice = styled.p`
-  font-weight: bold;
-  color: ${(props) => props.theme.colors.primary};
-  margin: 0 0 0.5rem 0;
-`;
-
-const OutOfStockLabel = styled.span`
-  color: #dc3545;
-  font-weight: bold;
 `;
 
 const LoadingMessage = styled.div`
@@ -157,7 +134,7 @@ interface CategoryPageProps {
 }
 
 export const CategoryPage: React.FC<CategoryPageProps> = ({ category }) => {
-  const { addToCart, isInCart, removeFromCart } = useCart();
+  const { addToCart } = useCart();
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
 
   const [products, setProducts] = useState<Product[]>([]);

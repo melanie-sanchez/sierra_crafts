@@ -1,17 +1,10 @@
-import React, {
-  createContext,
-  useContext,
-  useState,
-  useEffect,
-  ReactNode,
-} from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import { Product } from '../types';
 import { doc, increment, updateDoc } from 'firebase/firestore';
 import { db } from '../utils/firebase.ts';
 import { useWishlist } from './WishlistContext.tsx';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext.tsx'; // Add this import
-import { useAuthRedirect } from '../components/AuthRedirect.tsx';
 
 interface CartItem {
   product: Product;

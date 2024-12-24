@@ -47,11 +47,6 @@ const Label = styled.label`
   font-weight: bold;
 `;
 
-const CardIcon = styled.img`
-  height: 24px;
-  margin-left: 0.5rem;
-`;
-
 const OrderSummary = styled.div`
   margin-top: 2rem;
 `;
@@ -108,10 +103,6 @@ export const Checkout: React.FC = () => {
   const taxes = subtotal * taxRate;
   const shippingFee = 5.99; // Flat shipping fee, adjust as needed
   const total = subtotal + taxes + shippingFee;
-
-  const [address, setAddress] = useState('');
-  const [customerName, setCustomerName] = useState('');
-  const [email, setEmail] = useState('');
 
   const handleShippingChange = (e) => {
     setShippingInfo({

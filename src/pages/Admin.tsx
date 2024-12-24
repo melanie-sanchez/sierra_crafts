@@ -24,33 +24,6 @@ const AdminContainer = styled.div`
   }
 `;
 
-const Header = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-`;
-
-const Title = styled.h1`
-  color: ${(props) => props.theme.colors.primary};
-  margin: 0;
-`;
-
-const AddButton = styled.button`
-  background-color: ${(props) => props.theme.colors.primary};
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s;
-
-  &:hover {
-    background-color: ${(props) => props.theme.colors.primaryDark};
-  }
-`;
-
 const ProductList = styled.div`
   background: white;
   border-radius: 8px;
@@ -68,37 +41,6 @@ const ProductItem = styled.div`
   &:last-child {
     border-bottom: none;
   }
-`;
-
-const ProductInfo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-`;
-
-const ProductImage = styled.img`
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 4px;
-`;
-
-const ProductDetails = styled.div`
-  h3 {
-    margin: 0;
-    color: #333;
-  }
-
-  p {
-    margin: 0;
-    color: #666;
-    font-size: 0.875rem;
-  }
-`;
-
-const ActionButtons = styled.div`
-  display: flex;
-  gap: 0.5rem;
 `;
 
 const ActionButton = styled.button<{ variant?: 'edit' | 'delete' }>`

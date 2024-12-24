@@ -91,11 +91,6 @@ const WishlistButton = styled.button`
   justify-content: center;
 `;
 
-interface ProductDetailProps {
-  products: Product[];
-  onAddToCart: (product: Product) => void;
-}
-
 export const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<Product | null>(null);

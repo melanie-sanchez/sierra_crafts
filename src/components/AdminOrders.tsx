@@ -5,7 +5,6 @@ import {
   updateOrderStatus,
   getProductDetails,
 } from '../utils/firebase.ts';
-import { Link } from 'react-router-dom';
 
 import { getCardLogo } from '../utils/cardLogos.ts';
 

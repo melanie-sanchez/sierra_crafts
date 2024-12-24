@@ -193,21 +193,6 @@ const MyOrdersLink = styled(Link)`
   }
 `;
 
-const AdminLink = styled(Link)`
-  display: block;
-  width: 100%;
-  padding: 0.75rem 1rem;
-  color: ${(props) => props.theme.colors.primary};
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background-color 0.2s, color 0.2s;
-
-  &:hover {
-    background-color: ${(props) => props.theme.colors.primaryLight};
-    color: white;
-  }
-`;
-
 const AdminDashboardLink = styled(Link)`
   display: block;
   width: 100%;
