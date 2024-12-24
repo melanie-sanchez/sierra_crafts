@@ -83,13 +83,31 @@ export const Footer: React.FC = () => {
           <h3>Follow Us</h3>
           <ul>
             <li>
-              <a href="#">Instagram</a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
             </li>
             <li>
-              <a href="#">Facebook</a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
             </li>
             <li>
-              <a href="#">Pinterest</a>
+              <a
+                href="https://pinterest.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pinterest
+              </a>
             </li>
           </ul>
         </FooterSection>

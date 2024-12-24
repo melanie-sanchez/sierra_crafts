@@ -6,14 +6,16 @@ export const AuthCartHandler: React.FC = () => {
   const { user } = useAuth();
   const { clearCart, loadSavedCart, saveCart } = useCart();
 
+  // First useEffect
   useEffect(() => {
     if (user) {
       loadSavedCart(user.uid);
     } else {
       clearCart();
     }
-  }, [user]);
+  }, [user, loadSavedCart, clearCart]); // Add missing dependencies
 
+  // Second useEffect
   useEffect(() => {
     if (user) {
       saveCart(user.uid);
