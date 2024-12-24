@@ -27,3 +27,5 @@ yarn-error.log*
 .env.development
 .env.test
 .env.production
+build/
+dist/
