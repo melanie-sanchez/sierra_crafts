@@ -56,34 +56,51 @@ export const App: React.FC = () => {
                 <MainContent>
                   <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/sierra_crafts" element={<Home />} />
+                    <Route path="/sierra_crafts/*" element={<Home />} />
                     <Route
-                      path="/candles"
+                      path="/sierra_crafts/candles"
                       element={<CategoryPage category="candles" />}
                     />
                     <Route
-                      path="/earrings"
+                      path="//sierra_crafts/earrings"
                       element={<CategoryPage category="earrings" />}
                     />
                     <Route
-                      path="/stickers"
+                      path="/sierra_crafts/stickers"
                       element={<CategoryPage category="stickers" />}
                     />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/product/:id" element={<ProductDetail />} />
-
-                    <Route path="/cart" element={<Cart />} />
-                    <Route path="/checkout" element={<Checkout />} />
-                    <Route path="/calendar" element={<Calendar />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/register" element={<Register />} />
+                    <Route path="/sierra_crafts/about" element={<About />} />
                     <Route
-                      path="/forgot-password"
+                      path="/sierra_crafts/product/:id"
+                      element={<ProductDetail />}
+                    />
+
+                    <Route path="/sierra_crafts/cart" element={<Cart />} />
+                    <Route
+                      path="/sierra_crafts/checkout"
+                      element={<Checkout />}
+                    />
+                    <Route
+                      path="/sierra_crafts/calendar"
+                      element={<Calendar />}
+                    />
+                    <Route path="/sierra_crafts/login" element={<Login />} />
+                    <Route
+                      path="/sierra_crafts/register"
+                      element={<Register />}
+                    />
+                    <Route
+                      path="/sierra_crafts/forgot-password"
                       element={<ForgotPassword />}
                     />
 
-                    <Route path="/checkout" element={<Checkout />} />
                     <Route
-                      path="/admin"
+                      path="/sierra_crafts/checkout"
+                      element={<Checkout />}
+                    />
+                    <Route
+                      path="/sierra_crafts/admin"
                       element={
                         <ProtectedRoute adminOnly>
                           <Admin />
