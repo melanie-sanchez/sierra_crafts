@@ -43,7 +43,7 @@ const MainContent = styled.main`
 
 export const App: React.FC = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <AuthProvider>
         <WishlistProvider>
           <CartProvider>
