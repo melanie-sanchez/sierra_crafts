@@ -267,7 +267,7 @@ export const getBannerSettings = async () => {
     return docSnap.exists() ? docSnap.data() : null;
   } catch (error) {
     console.error('Error getting banner settings:', error);
-    throw error;
+    return null; // Return null instead of throwing error
   }
 };
 
