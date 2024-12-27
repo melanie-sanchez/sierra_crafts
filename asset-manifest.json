@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sierra_crafts/static/css/main.e6c13ad2.css",
-    "main.js": "/sierra_crafts/static/js/main.e5705d6b.js",
+    "main.js": "/sierra_crafts/static/js/main.59560e5b.js",
     "index.html": "/sierra_crafts/index.html",
     "main.e6c13ad2.css.map": "/sierra_crafts/static/css/main.e6c13ad2.css.map",
-    "main.e5705d6b.js.map": "/sierra_crafts/static/js/main.e5705d6b.js.map"
+    "main.59560e5b.js.map": "/sierra_crafts/static/js/main.59560e5b.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.e5705d6b.js"
+    "static/js/main.59560e5b.js"
   ]
 }
