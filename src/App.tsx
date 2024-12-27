@@ -43,7 +43,7 @@ const MainContent = styled.main`
 
 export const App: React.FC = () => {
   return (
-  <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/sierra_crafts">
       <AuthProvider>
         <WishlistProvider>
           <CartProvider>
@@ -56,51 +56,31 @@ export const App: React.FC = () => {
                 <MainContent>
                   <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/sierra_crafts" element={<Home />} />
-                    <Route path="/sierra_crafts/*" element={<Home />} />
                     <Route
-                      path="/sierra_crafts/candles"
+                      path="/candles"
                       element={<CategoryPage category="candles" />}
                     />
                     <Route
-                      path="//sierra_crafts/earrings"
+                      path="/earrings"
                       element={<CategoryPage category="earrings" />}
                     />
                     <Route
-                      path="/sierra_crafts/stickers"
+                      path="/stickers"
                       element={<CategoryPage category="stickers" />}
                     />
-                    <Route path="/sierra_crafts/about" element={<About />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/product/:id" element={<ProductDetail />} />
+                    <Route path="/cart" element={<Cart />} />
+                    <Route path="/checkout" element={<Checkout />} />
+                    <Route path="/calendar" element={<Calendar />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
                     <Route
-                      path="/sierra_crafts/product/:id"
-                      element={<ProductDetail />}
-                    />
-
-                    <Route path="/sierra_crafts/cart" element={<Cart />} />
-                    <Route
-                      path="/sierra_crafts/checkout"
-                      element={<Checkout />}
-                    />
-                    <Route
-                      path="/sierra_crafts/calendar"
-                      element={<Calendar />}
-                    />
-                    <Route path="/sierra_crafts/login" element={<Login />} />
-                    <Route
-                      path="/sierra_crafts/register"
-                      element={<Register />}
-                    />
-                    <Route
-                      path="/sierra_crafts/forgot-password"
+                      path="/forgot-password"
                       element={<ForgotPassword />}
                     />
-
                     <Route
-                      path="/sierra_crafts/checkout"
-                      element={<Checkout />}
-                    />
-                    <Route
-                      path="/sierra_crafts/admin"
+                      path="/admin"
                       element={
                         <ProtectedRoute adminOnly>
                           <Admin />
