@@ -1,7 +1,7 @@
 {
   "name": "nature-shop",
   "version": "0.1.0",
-  "homepage": "https://melanie-sanchez.github.io/sierra_crafts",
+  "homepage": "https://melanie-sanchez.github.io/sierra_crafts/",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
